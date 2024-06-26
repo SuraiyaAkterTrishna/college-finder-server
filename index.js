@@ -95,7 +95,7 @@ async function run() {
             res.send(result);
         })
 
-        // send one product to database 
+        // send one product to database s
         app.post('/user', async (req, res) => {
             const newUser = req.body;
             const result = await userCollection.insertOne(newUser);
